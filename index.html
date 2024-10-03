@@ -85,7 +85,16 @@
             <p id="lastModified">Last modification: <span id="day"></span>/<span id="month"></span>/<span id="year2"></span>  <span id="hour"></span>:<span id="minute"></span>:<span id="seconds"></span></p>
             <p></p>
         </div>
-        <script src="/scripts/getdates.js"></script>
+        <script>
+            const date = new Date();
+            const year = document.getElementById('year').innerHTML = date.getFullYear();
+            const day = document.getElementById('day').innerHTML = date.getDay()
+            const month = document.getElementById('month').innerHTML = date.getMonth()
+            const year2 = document.getElementById('year2').innerHTML = date.getFullYear()
+            const hour = document.getElementById('hour').innerHTML = date.getHours()
+            const minute = document.getElementById('minute').innerHTML = date.getMinutes()
+            const seconds = document.getElementById('seconds').innerHTML = date.getSeconds()
+        </script>
     </footer>
 </body>
 
